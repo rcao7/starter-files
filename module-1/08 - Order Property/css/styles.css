@@ -7,4 +7,59 @@
 
 body {
     font-family: "Inter", sans-serif;
+    color: var(--body);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    color: var(--heading);
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: left;
+    padding: 1rem;
+}
+
+p {
+    text-align: left;
+}
+
+div {
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.info {
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media (min-width: 900px) {
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: calc((100% - 2rem) / 3);
+    }
 }
